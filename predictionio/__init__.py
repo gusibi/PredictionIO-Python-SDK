@@ -41,6 +41,10 @@ class NotFoundError(PredictionIOAPIError):
   pass
 
 
+class InvalidArgumentError(PredictionIOAPIError):
+    pass
+
+
 def event_time_validation(t):
   """ Validate event_time according to EventAPI Specification.
   """
